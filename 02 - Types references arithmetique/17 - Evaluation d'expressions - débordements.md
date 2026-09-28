@@ -2,7 +2,7 @@
 
 Que va afficher le programme ci-dessous ? Expliquer les résultats obtenus.
 
-~~~cpp
+```cpp
 #include <cstdlib>
 #include <iomanip>
 #include <iostream>
@@ -19,7 +19,16 @@ int main() {
    cout << "7) " << 1E8 + 1.0 << endl;
    cout << "8) " << 1E8f + 1.f << endl;
 }
-~~~
+```
+1. (un entier négatif)
+2. 3000000000
+3. un nombre plus petit que 1000000000000000
+4. 1000000000000000
+5. 10000001
+6. 10000001
+7. 100000001
+8. 100000001 (faux car arrondi)
+
 
 <details>
 <summary>Solution</summary>
