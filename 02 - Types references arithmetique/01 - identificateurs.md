@@ -13,16 +13,16 @@ Rappel des recommandations :
 
 |  #  | Déclaration (et contexte) | Conforme ? | Recommandation / meilleur nom |
 | --- | --- | --- | --- |
-| 1 | `int nNbEtudiants = 25;` | | |
-| 2 | `double surface = largeur * hauteur;` | | |
-| 3 | `const int NB_MAX_ETUDIANTS = 100;` | | |
-| 4 | `int nombreTotalDeBouteillesDansUnPack = 6;` | | |
-| 5 | `double x = 13.2 * nb_bouteilles; // poids du pack en grammes` | | |
-| 6 | `int nbPacks, nb_bouteilles, PrixUnitaire;` | | |
-| 7 | `double dblPrix = 2.5;` | | |
-| 8 | `int a = 4, b = 12;` (utilisées 40 lignes plus loin, dans un calcul de prix) | | |
-| 9 | `double volume_canette_l = 0.33;` | | |
-| 10 | `int INT = 3;` | | |
+| 1 | `int nNbEtudiants = 25;` | Non | nb_students |
+| 2 | `double surface = largeur * hauteur;` | Oui | |
+| 3 | `const int NB_MAX_ETUDIANTS = 100;` | Non | max_students |
+| 4 | `int nombreTotalDeBouteillesDansUnPack = 6;` | Oui | nb_total_per_pack |
+| 5 | `double x = 13.2 * nb_bouteilles; // poids du pack en grammes` | Non | pack_weight_g |
+| 6 | `int nbPacks, nb_bouteilles, PrixUnitaire;` | Non | nb_packs, nb_bottles, unit_price |
+| 7 | `double dblPrix = 2.5;` | Non | price |
+| 8 | `int a = 4, b = 12;` (utilisées 40 lignes plus loin, dans un calcul de prix) | Non | nb_packs, unit_price |
+| 9 | `double volume_canette_l = 0.33;` | Oui | |
+| 10 | `int INT = 3;` | Non | nb_packs |
 
 <details>
 <summary>Solution</summary>
