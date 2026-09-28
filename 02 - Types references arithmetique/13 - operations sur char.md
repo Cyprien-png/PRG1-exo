@@ -18,7 +18,10 @@ cout << "3. " << z << endl;
 z = x + '0';
 cout << "4. " << z << endl;
 ~~~
-
+1. E
+2. F
+3. A
+4. (le char en 113)
 
 
 
