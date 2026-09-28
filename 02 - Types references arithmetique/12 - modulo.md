@@ -13,11 +13,11 @@ En cas d'erreur, indiquez la raison.\
 
 | # | Expression | Résultat |
 |---| ---------- |---|
-| 1 | `j % i` | |
-| 2 | `n % i`  | |
-| 3 | `y % x`  | |
-| 4 | `y % i` | |
-| 5 | `-j % i` | |
+| 1 | `j % i` | 1 |
+| 2 | `n % i`  | 0 |
+| 3 | `y % x`  | - |
+| 4 | `y % i` | - |
+| 5 | `-j % i` | -1 |
 
 
     
