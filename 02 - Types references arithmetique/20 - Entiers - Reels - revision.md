@@ -16,6 +16,7 @@ On suppose que le système utilise le modèle de données LP64.
 // 1
 cout << static_cast<double>(1 / 3);
 ~~~
+0
 
 <details>
 <summary>Solution</summary>
@@ -30,6 +31,7 @@ cout << static_cast<double>(1 / 3);
 // 2
 cout << static_cast<double>(1) / 3;
 ~~~
+0.333333...
 
 <details>
 <summary>Solution</summary>
@@ -45,6 +47,7 @@ cout << static_cast<double>(1) / 3;
 int entier = 1e42;
 cout << entier << endl;
 ~~~
+-
 
 <details>
 <summary>Solution</summary>
@@ -58,6 +61,7 @@ Résultat indéfini : `1e42` est un `double` converti implicitement en `int`, et
 float reel = 1234567890;
 cout << fixed << reel << endl;
 ~~~
+1234567...,0000
 
 <details>
 <summary>Solution</summary>
@@ -75,6 +79,7 @@ if (static_cast<float>(1234567890) == 1234567890)
 else
    cout << "pas d'égalité";
 ~~~
+égalité
 
 <details>
 <summary>Solution</summary>
