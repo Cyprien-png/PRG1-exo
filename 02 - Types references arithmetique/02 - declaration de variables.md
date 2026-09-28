@@ -9,7 +9,8 @@ Pour chaque séquence d'instructions suivante, déterminez si elle est correcte 
     int n = 1;
     n = 1 - 2 * n;
     n = n + 1;
-   ~~~
+   ~~~ 
+Oui, 0
 
 2.  
     ~~~cpp
@@ -17,23 +18,31 @@ Pour chaque séquence d'instructions suivante, déterminez si elle est correcte 
     n = n + 1;
     int n = 1 - 2 * n;
     ~~~
+   Non, double initialisation.
+
 3. 
     ~~~cpp
     int n = 1, p = 2;
     n = (n + 1) * (n - k);
     ~~~
+Non, k non défini  
+
 4. 
     ~~~cpp
     int n, m = 0;
     n = 2 * n - 1;
     m = n + 1;
     ~~~
+   Oui mais réulstat non prédictible a cause de l'init de n
+
  5. 
     ~~~cpp
     int n = 5, m = 0;
     const int nb_produit = 10;
     m = n * nb_produit - 1;    
     ~~~
+    Oui, $5 * 10 - 1$ donc 49
+
  6. 
     ~~~cpp
     int n = 5, m = 0;
@@ -41,6 +50,8 @@ Pour chaque séquence d'instructions suivante, déterminez si elle est correcte 
     nb_produit -= 1;
     m = n * nb_produit;
     ~~~
+Non car nb_produit est immuable    
+
 
 <details>
 <summary>Solution</summary>
