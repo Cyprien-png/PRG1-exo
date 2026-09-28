@@ -110,7 +110,21 @@ void ex22() {
     cout << "Le volume total de votre bouteille est de " << volume_liters << " litres." << endl;
 }
 
+void ex23() {
+    int length;
+    const double mile_ratio = 1/1609.;
+    const double foot_ratio = 3.28084;
+    const double inche_ratio = 39.3701;
+
+    cout << "Entrez le nombre de metres a convertir (entier > 0) : ";
+    cin >> length;
+
+    cout << length << "[m] sont " << length * mile_ratio << " [miles]" << endl;
+    cout << length << "[m] sont " << length * foot_ratio << " [feet]" << endl;
+    cout << length << "[m] sont " << length * inche_ratio << " [inches]" << endl;
+}
+
 int main() {
 
-    ex22();
+    ex23();
 }
