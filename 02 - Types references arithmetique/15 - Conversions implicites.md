@@ -17,7 +17,9 @@ Pour chacune des expressions suivantes, indiquez :
 static_cast<char>(n) + c           // r2
 static_cast<float>(z) + n / 2      // r3
 ~~~
-
+- r1 est un float qui a convertit "2" `int => float` et "c" `char => int => float`. donc 3
+- r2 est un char qui a convertit "n" `int => char (explicite)` et l'addition `char => int` + `char => int` `=> char`. donc 4
+- r3 est un float qui a convertit "z" `double => float (explicite)` puis (7/2) est devenu 3 (int) qui a été converti pour l'addition `int => float`. donc 1
 
 <details><summary>Solution</summary>
 
