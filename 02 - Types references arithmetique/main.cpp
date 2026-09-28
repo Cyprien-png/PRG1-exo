@@ -1,5 +1,7 @@
+#define _USE_MATH_DEFINES
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 
 using namespace std;
 
@@ -79,7 +81,36 @@ void ex21() {
     // cref1 = 4;
 }
 
+void ex22() {
+    double r1;
+    double r2;
+    double h1;
+    double h2;
+    double h3;
+
+    cout << "Entrez les valeurs demandées pour calculer le volume de la bouteille." << endl;
+    cout << "Rayon du contenant: ";
+    cin >> r1;
+    cout << "Rayon du bouchon: ";
+    cin >> r2;
+    cout << "Hauteur du contenant: ";
+    cin >> h1;
+    cout << "Hauteur du bouchon: ";
+    cin >> h2;
+    cout << "Hauteur du cone: ";
+    cin >> h3;
+
+    double cylinder_vol = M_PI * pow(r1, 2) * h1;
+    double cap_vol = M_PI * pow(r2, 2) * h2;
+    double cone_vol = (pow(r1, 2) + pow(r2, 2) + r1 * r2) * h3 * M_PI / 3;
+
+    double volume_cm = cylinder_vol + cap_vol + cone_vol;
+    double volume_liters = volume_cm / 1000;
+
+    cout << "Le volume total de votre bouteille est de " << volume_liters << " litres." << endl;
+}
+
 int main() {
 
-    ex9();
+    ex22();
 }
