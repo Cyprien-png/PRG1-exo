@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -10,7 +11,7 @@ using namespace std;
  * * s'il est signé ou pas
  */
 void ex5() {
-    using type = long;
+    using type = int;
 
     int size = sizeof(type);
     int lower = numeric_limits<type>::lowest();
@@ -22,12 +23,51 @@ void ex5() {
     cout << "Size (bits): " << sizeBits << " bits" << endl;
     cout << "Range: " << lower << " to " << upper << endl;
     cout << "Is signed: " << is_signed << endl;
+}
 
+void ex7() {
+    cout << 1.5 << endl;
+    cout << 1E3 << endl;
+    // cout << 12.0u << endl;
+    cout << 1.0L << endl;
+    cout << .5 << endl;
+    cout << 5. << endl;
+    cout << 2.5f << endl;
+    cout << 3e-2 << endl;
+}
 
+void ex8() {
+    const int bases[2] = {10, 2};
+    double nb = 0;
 
+    cout << "Donnez un nombre Reel scritectement positif" << endl;
+    cin >> nb;
+
+    for (int i: bases) {
+        const double log_on_base = log10(nb) / log10(i);
+        const double power = floor(log_on_base);
+        const double mantis = nb / pow(i, power);
+        cout << "En puissance de " << i << ": " << nb << " = " << mantis << " * " << i << "^" << power << endl;
+    }
+}
+
+void ex9() {
+    const double limit = numeric_limits<float>::digits;
+    const double max_round_value = pow(2, limit) + 1;
+    cout << fixed << setprecision(0) << max_round_value << endl;
+
+    int n = 16777217;
+    cout << boolalpha << setprecision(10);
+    cout << "1) " << static_cast<float>(n) << endl;
+    cout << "2) " << (static_cast<float>(n) == n) << endl;
+    cout << "3) " << (static_cast<int>(static_cast<float>(n)) == n) << endl;
+
+    const long limit_d = numeric_limits<double>::digits;
+    const long long max_round_value_d = (1LL << numeric_limits<double>::digits) + 1;
+    cout << fixed << setprecision(0) << max_round_value_d << endl;
 }
 
 int main() {
 
-    ex5();
+    ex9();
 }

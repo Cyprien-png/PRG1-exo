@@ -13,6 +13,7 @@ cout << "1) " << static_cast<float>(n) << endl;
 cout << "2) " << (static_cast<float>(n) == n) << endl;
 cout << "3) " << (static_cast<int>(static_cast<float>(n)) == n) << endl;
 ~~~
+Car lors du cast float => float, la valeur est simplement "arrondie a l'entier" donc l'égalité est correct. Dans le second cas, l'encodage du int est trop petit pour contenir la valeur du float
 
 3. Même question pour le type `double` (`numeric_limits<double>::digits` vaut 53) : quel est le plus petit entier positif non représentable, et dans quel type entier faut-il le stocker pour faire la vérification ?
 
