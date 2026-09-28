@@ -67,6 +67,18 @@ void ex9() {
     cout << fixed << setprecision(0) << max_round_value_d << endl;
 }
 
+void ex21() {
+    int var1 = 1;
+    int& ref1 = var1;
+    // int& ref2;
+    var1 = 2;
+    ref1 = 3;
+    cout << var1 << endl;
+    cout << ref1 << endl;
+    const int& cref1 = var1;
+    // cref1 = 4;
+}
+
 int main() {
 
     ex9();
