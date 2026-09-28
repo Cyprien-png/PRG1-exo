@@ -21,6 +21,7 @@ cout << numeric_limits<double>::min()  << endl; // 2.22507e-308
 // 1
 cout << round(floor(-9.8) / ceil(-4.9));
 ~~~
+-10 / -4 = 10/4 = 2.5 => `3`
 
 <details>
 <summary>Solution</summary>
@@ -34,6 +35,8 @@ cout << round(floor(-9.8) / ceil(-4.9));
 double x = numeric_limits<double>::max();
 cout << 2 * x / x;
 ~~~
+-
+
 
 <details>
 <summary>Solution</summary>
@@ -50,6 +53,7 @@ if (1 / 3. == 0.3333333333333333)
 else
    cout << "pas d'egalité" << endl;
 ~~~
+`pas d'egalité`
 
 <details>
 <summary>Solution</summary>
@@ -63,7 +67,7 @@ else
 // 4
 // coder ceci correctement de manière à résoudre ce problème correctement pour des double
 
-if ( /* votre réponse */ )
+if ( fabs( 1 / 3. - 0.3333333333333333) < 0.000001
    cout << "egalité" << endl;
 else
    cout << "pas d'egalité" << endl;
@@ -88,6 +92,7 @@ if ( static_cast<double>(1 / 3.) == static_cast<float>(1 / 3.))
 else
    cout << "pas d'egalité" << endl;
 ~~~
+pas d'egalité
 
 <details>
 <summary>Solution</summary>
@@ -106,6 +111,7 @@ cout << setprecision(20) << static_cast<float>(1 / 3.)  << endl; // 0.3333333432
 float reel = 3.14159e42;
 cout << reel << endl;
 ~~~
+-
 
 <details>
 <summary>Solution</summary>
@@ -119,6 +125,7 @@ cout << reel << endl;
 float reel = 1e7 + 1.01;
 cout << fixed << reel << endl;
 ~~~
+10000001.01
 
 <details>
 <summary>Solution</summary>
