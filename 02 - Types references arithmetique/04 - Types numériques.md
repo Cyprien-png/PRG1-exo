@@ -1,6 +1,9 @@
 # Types numériques (théorie)
 
-1. Donnez le nom des 5 types entiers signés du C++, du plus court au plus long 
+1. Donnez le nom des 5 types entiers signés du C++, du plus court au plus long
+
+char, short, int, long, long long
+
 
 <details>
 <summary>Solution</summary>
@@ -17,7 +20,10 @@ Le mot clé `signed` est optionnel, sauf pour `char` (`signed char`). Seules gar
 
 </details>
 
-2. Idem pour les 5 types entiers non signés 
+2. Idem pour les 5 types entiers non signés
+
+unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long
+
 
 <details>
 <summary>Solution</summary>
@@ -34,12 +40,16 @@ unsigned long long
 
 3. Le type int est-il signé ou non signé par défaut ?
 
+Il l'est.
+
 <details>
 <summary>Solution</summary>
 signé
 </details>
 
 4. Le domaine de définition des entiers est-il fixé par la norme ou dépend-il de l'environnement utilisé ?
+
+Oui
 
 <details>
 <summary>Solution</summary>
