@@ -10,6 +10,11 @@ double x3 = j / i + .5;
 double x4 = static_cast<double>(j) / i + .5;
 double x5 = static_cast<int>(j + .5) / i;
 ~~~
+1. 2.2
+2. 2.0
+3. 2.5
+4. 2.7
+5. 2
 
 Que valent les variables x1 à x5 ? 
 
