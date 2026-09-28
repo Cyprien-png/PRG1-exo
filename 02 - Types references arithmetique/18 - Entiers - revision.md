@@ -25,6 +25,7 @@ cout << numeric_limits<long>::max()           << endl; // 9223372036854775807
 signed short sh = numeric_limits<short>::max();
 cout << sh;
 ~~~
+32767
 
 <details>
 <summary>Solution</summary>
@@ -38,6 +39,7 @@ cout << sh;
 unsigned short sh = numeric_limits<short>::max();
 cout << sh;
 ~~~
+32767
 
 <details>
 <summary>Solution</summary>
@@ -51,6 +53,7 @@ cout << sh;
 unsigned short sh = numeric_limits<unsigned short>::max();
 cout << sh;
 ~~~
+32767
 
 <details>
 <summary>Solution</summary>
@@ -64,6 +67,7 @@ cout << sh;
 unsigned short sh = numeric_limits<unsigned short>::max() + 1;
 cout << sh;
 ~~~
+0
 
 <details>
 <summary>Solution</summary>
@@ -77,6 +81,7 @@ cout << sh;
 unsigned short sh = numeric_limits<unsigned short>::max();
 cout << sh + 1;
 ~~~
+65536
 
 <details>
 <summary>Solution</summary>
@@ -92,6 +97,7 @@ cout << sh + 1;
 unsigned short sh = -1;
 cout << sh;
 ~~~
+65535
 
 <details>
 <summary>Solution</summary>
@@ -104,6 +110,7 @@ cout << sh;
 // 7
 cout << "Wallis = " << 2/1 * 2/3 * 4/3 * 4/5 << endl;
 ~~~
+Wallis ..
 
 <details>
 <summary>Solution</summary>
@@ -124,6 +131,7 @@ if ( /* votre réponse ici */ )
 else
    cout << "pas de débordement" << endl;
 ~~~
+`(a > 0) && (b > 0) & (a + b < 0) ` 
 
 <details>
 <summary>Solution</summary>
