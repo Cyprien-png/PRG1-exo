@@ -14,10 +14,28 @@ Complétez le programme qui suit pour qu'il détermine et affiche le tarif de li
 using namespace std;
 
 int main() {
+    // shipping prices
+    const double standard = 5.;
+    const double taxed = 7.;
+    const double world = 10.;
+    double final_price;
+    
    cout << "Livraison en Suisse ? (O/N) ";
    char reponse1; cin >> reponse1;
+   char reponse2;
+      
+   if (reponse1 == O) {
+       cout << "Votre canton est-il dans la liste : Grison, Tessin (O/N) "
+       cin >> reponse2;
+       final_price = reponse2 == "O" ? taxed : standard; 
    
-   // votre code vient ici
+   } else {
+       cout << "Etes-vous au Liechtenstein ? (O/N) "
+       cin >> reponse2;
+       final_price = reponse2 == "O" ? taxed : world; 
+   }
+
+   cout << "L'envoi vous coutera : " << final_price << " CHF" << endl;
 }
 ~~~
 
