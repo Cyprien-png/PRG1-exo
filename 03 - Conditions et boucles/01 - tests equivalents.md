@@ -17,7 +17,7 @@ if (prixActuel < 100) {
    nouveauPrix = prixActuel - 20;
 }
 ~~~
-
+Non, car le cas "=100" passe de l'autre coté
 <details>
 <summary>Solution</summary>
 Non, si prixActuel == 100, la valeur de nouveauPrix diffère. 
