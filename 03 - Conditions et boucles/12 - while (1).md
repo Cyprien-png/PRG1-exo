@@ -9,6 +9,11 @@ while (i - 10) {
    i += 2; cout << i << " ";
 }
 ~~~
+2
+4
+6
+8
+10
 
 <details>
 <summary>Solution</summary>
@@ -25,6 +30,7 @@ int i = 0;
 while (i - 10)
    i += 2; cout << i << " ";
 ~~~
+10
 
 <details>
 <summary>Solution</summary>
@@ -44,6 +50,7 @@ while (i < 11) {
    i += 2; cout << i << " ";
 }
 ~~~
+2 4 6 8 10 12
 
 <details>
 <summary>Solution</summary>
@@ -60,6 +67,14 @@ while (i--) {
    cout << i-- << " ";
 }
 ~~~
+10
+8
+6
+4
+2
+0
+-2
+..
 
 <details>
 <summary>Solution</summary>
@@ -77,6 +92,12 @@ while (i--) {
    cout << --i << " ";
 }
 ~~~
+10
+8
+6
+4
+2
+0
 
 <details>
 <summary>Solution</summary>
@@ -93,6 +114,7 @@ while (i++ < 10) {
    cout << i-- << " ";
 }
 ~~~
+1 1 1 1 1 1 ...
 
 <details>
 <summary>Solution</summary>
@@ -110,6 +132,11 @@ while (i <= 5) {
    cout << 2 * i++ << " ";
 }
 ~~~
+2
+4
+6
+8
+19
 
 <details>
 <summary>Solution</summary>
@@ -126,6 +153,7 @@ while (i != 9) {
    cout << (i = i + 2) << " ";
 }
 ~~~
+3 5 7 9
 
 <details>
 <summary>Solution</summary>
