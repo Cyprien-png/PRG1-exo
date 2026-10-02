@@ -9,6 +9,7 @@ while (i <= 5)
    i++;
 cout << i;
 ~~~
+6
 
 <details>
 <summary>Solution</summary>
@@ -25,6 +26,18 @@ while (i <= 5)
    i += j++;
 cout << i << ' ' << j;
 ~~~
+```
+0 0
+0 += 0
+0 1
+0 += 1 = 1
+1 2
+1 += 2 = 3
+3 3
+3 += 3 = 6
+6 4
+```
+6 4
 
 <details>
 <summary>Solution</summary>
@@ -42,6 +55,16 @@ while (i <= 5)
    i += ++j;
 cout << i << ' ' << j;
 ~~~
+```
+0 0
+0 += 1 = 1
+1 1
+1 += 2 = 3
+3 2 
+3 += 3 = 6
+6 3
+```
+6 3
 
 <details>
 <summary>Solution</summary>
@@ -59,6 +82,22 @@ while (j <= 5)
    i += j++;
 cout << i << ' ' << j;
 ~~~
+```
+0 0
+0 += 0
+0 1
+0 += 1 = 1
+1 2
+1 += 2 = 3
+3 3
+3 += 3 = 6
+6 4
+6 += 4 = 10
+10 5
+10 += 5 = 15
+15 6
+```
+15 6
 
 <details>
 <summary>Solution</summary>
@@ -76,6 +115,23 @@ while (j <= 5)
    i += ++j;
 cout << i << ' ' << j;
 ~~~
+```
+0 0
+0 += 1 = 1
+1 1
+1 += 2 = 3
+3 2
+3 += 3 = 6
+6 3
+6 += 4 = 10
+10 4
+10 += 5 = 15
+15 5
+15 += 6 = 21
+21 6 
+
+```
+21 6
 
 <details>
 <summary>Solution</summary>
@@ -92,6 +148,7 @@ int i = 0, j = 0;
 while (i <= 5) i += 2; j++;
 cout << i << ' ' << j;
 ~~~
+6 1
 
 <details>
 <summary>Solution</summary>
