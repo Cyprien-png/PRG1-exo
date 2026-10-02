@@ -17,10 +17,10 @@ int main() {
     cout << "Entrez le taux d'interet annuel en % > ";
     cin >> rate;
 
-    for (; years > 0; years--)
+    for (int y = years; y > 0; y--)
         amount += amount * rate / 100.;
 
-    cout << "Le montant disponible après " << (years < 1 ? " ans" : " an") << " est de " << amount << " CHF" << fixed << setprecision(2) ;
+    cout << "Le montant disponible après " << years  << (years < 1 ? " ans" : " an") << " est de " << amount << " CHF" << fixed << setprecision(2) ;
 
     return 0;
 }
