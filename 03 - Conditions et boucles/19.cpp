@@ -1,37 +1,32 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
 int main() {
-    double initial_amount;
-    double target_amount;
+    double amount;
     double rate;
-    int years = 0;
+    int years;
 
     do {
         cout << "Entrez le montant initial > ";
-        cin >> initial_amount;
-    } while (initial_amount < 1000);
+        cin >> amount;
+    } while (amount < 1000);
 
     do {
-        cout << "Entrez le montant cible > ";
-        cin >> target_amount;
-    } while (target_amount <= 0);
+        cout << "Entrez le nombre d'annees > ";
+        cin >> years;
+    } while (years <= 0);
 
     do {
         cout << "Entrez le taux d'interet annuel en % > ";
         cin >> rate;
-    } while (rate < -5 || rate > 50);
+    } while (rate < -5 || rate > 50 );
 
-    if (rate <= 0) {
-        cout << "Le montant ne sera jamais atteint.";
-        return 0;
-    }
+    for (int y = years; y > 0; y--)
+        amount += amount * rate / 100.;
 
-    for (; initial_amount < target_amount; years++)
-        initial_amount += initial_amount * rate / 100.;
-
-    cout << "Le montant cible est atteint apres " << years << (years < 1 ? " ans." : " an.") ;
+    cout << "Le montant disponible après " << years << (years < 1 ? " ans" : " an") << " est de " << amount << " CHF" << fixed << setprecision(2);
 
     return 0;
 }
