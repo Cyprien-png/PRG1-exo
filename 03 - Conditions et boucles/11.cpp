@@ -10,6 +10,10 @@ int main() {
 
     double delta = b * b - 4 * a * c;
 
+
+    float test = 4.0f;
+    cout <<  numeric_limits<float>::epsilon() << endl;
+
     if (delta < 0) {
         cout << "Il n'y a pas de solution dans R";
         return 0;
@@ -18,4 +22,6 @@ int main() {
     } else {
         cout << "Les deux valeurs de X possible sont: " << (-b + sqrt(delta))/2*a << " et " << (-b - sqrt(delta))/2*a;
     }
+
+
 }
